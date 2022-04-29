@@ -1,0 +1,63 @@
+.project{
+    background: #fff;
+    color: #111;
+    padding: 60px;
+    margin-top: 10px;
+}
+
+.project-content{
+    display: flex;
+    flex-flow:row ;
+    justify-content: space-around;
+    width: 100%;
+}
+.project .small{
+    color: #ebc003;
+}
+.project-content .card{
+     display: block;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9); 
+   
+    text-align: center;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 280px;
+}
+
+.card-img img{
+    width: 100%;
+    height:180px;
+
+
+}
+.project-content .card .text{
+    font-size: 20px;
+    font-weight: 700;
+    color: #000;
+}
+.project-content .card p{
+    margin: 20px;
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.project .project-content .card:hover{
+    transform: scale(1.05);
+
+}
+.project .project-content .card:hover .text{
+    color: #000;
+}
+
+/* Responsive Design */
+ @media screen and (max-width: 500px) {
+    .project-content {
+        display: flex;
+        flex-direction: column;
+    }
+.project-content .card{
+    margin-bottom: 20px;
+    
+}
+    
+}
